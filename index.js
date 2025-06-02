@@ -25,8 +25,13 @@ app.get("/login", (req,res) => {
     res.render("index");
 });
 
+app.get("/cadastrar", (req,res) => {
+    res.render("create")
+});
 
-app.get("/chat", (req,res) => {
+
+
+app.get("/", (req,res) => {
     res.render("chat");
 });
 
