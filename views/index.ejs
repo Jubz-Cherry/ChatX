@@ -5,31 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
     </head>
 <body>
-    <div style="max-width: 400px; margin: 60px auto; padding: 16px; background-color: #fff; border: 1px solid #ccc; border-radius: 8px;">
-    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-    <div class="container">
-        <div class="card" id="formulario-pergunta">
-         <div class="card-header">  
 
-</div>
-</div>
-
+    <div class="wrapper">
+        <form action="post">
     <h1>Fazer Login</h1>
     <hr>
-    <form style="display: flex; flex-direction: column; gap: 8px;" method="post" action="/login">
-    <input type="text" name="email" id="email" placeholder="Digite seu email" class="form-control">
-    <input type="text" name="senha" id="senha" placeholder="Digite sua senha" class="form-control">
-    <button class="btn btn-danger w-100">Entrar</button>
+
+    <div calss="input-box">
+    <input type="text" name="email" id="email" placeholder="Digite seu email" class="form-control" required>
+    <i class='bx bx-user'></i>
+    </div>
+
+    <div class="input-box">
+    <input type="password" name="senha" id="password" placeholder="Digite sua senha" class="form-control" required>
+    <i class='bx bx-lock-alt'></i>
+    </div>
+
+    <div class="remenber-forgot">
+        <label><input type="checkbox"> Lembre-se de mim!</label>
+            <a href="#">Esqueceu a senha?</a>
+    </div>
+
+    <div class="register-link">
+        <p>Não tem conta ainda?<a href="#">Crie uma agora!</a></p>
+        <button type="submit" class="btn">Login</button>
     </form>
-    <hr>
-    <hr>
-    <button style="background: none; border: none; color: #007bff; cursor: pointer; margin-top: 10px;">
-  Não tem conta? Cadastre-se agora!
-</button>
+    </div>
 
 </body>
 
